@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+/* header */
+header{
+    background-color: rgb(241, 238, 238);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    height: 3rem;
+    top:0;
+    z-index: 2;
+} 
+.header__enlaces{
+    display: inline;
+    cursor: pointer;
+    text-align: center;
+    color: black;
+}
+.header__enlaces a{
+    padding-left: 5rem;
+    font-weight: bold;
+}
+.header__enlaces a:visited{
+    color: black;
+}
+.header__enlaces a:hover{
+    background-color: var(--primary-color);
+    color: rgb(241, 63, 63);
+
+}
+.header__iconos{
+    padding-top: 0.5rem;
+}
+
+/* main */
+/* inicio */
+#main__inicio{
+    margin-top: 3rem;
+}
+.main__inicio-texto{
+    position: absolute;
+    padding-top: 3em;
+    padding-left: 2em;
+    padding-bottom: 2em;
+    z-index: 1;
+}
+.main__inicio-texto h2{
+    padding-top: -2em;
+    padding-left: 2em;
+    padding-bottom: 1.8em;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.main__inicio-texto h1{
+    padding-left: 1.7em;
+    font-size: 3rem;
+    text-align: center;
+    font-style: italic;
+}
+.main__inicio-image{
+    width: 100%;
+    opacity: 0.5;
+    max-height: 70%;
+}
+
+/* sobre mi */
+.sobre-mi{
+    position: absolute;
+    z-index: 1;
+}
+.main__sobre-mi-image{
+    width: 100%;
+    opacity: 0.3;
+    max-height: 70%;
+}
+#main__sobre-mi h1{
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.sobre-mi-columns{
+    column-count:3;
+    font-size: 1rem;
+    text-align: justify;
+    font-weight:700;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    line-height: 1.8em;
+    column-gap: 2rem;
+}
+
+/* desarrollo */
+.desarrollo{
+    position: absolute;
+    z-index: 1;
+}
+.fondo-desarrollo{
+    width: 100%;
+    opacity: 0.3;
+    max-height: 100%;
+}
+.logo-lenguaje{
+    height: 5em;
+    width: 5em;
+}
+.logos-lenguajes{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1em;
+}
+.lenguajes{
+    text-align: center;
+}
+#main__desarrollo h1{
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.texto-desarrollo{
+    font-weight:700;
+    font-size: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: justify;
+}
+.desarrollo h2{
+    font-size: 1.8em;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+.proyectos-desarrollo{
+    display: grid;
+    grid-template-areas: 
+    'item1 item2'
+    'item3 item4';
+    grid-template-columns: 40rem 40rem;
+    grid-template-rows: 10rem 10rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    font-weight:500;
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.8em;
+}
+.img-proyecto{
+    width: auto;
+    height: 100%
+}
+.item1{
+    grid-area: item1; 
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.item2{
+    grid-area: item2; 
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.item3{
+    grid-area: item3; 
+    display: flex;
+    align-items: space-around;
+    gap: 1rem;
+}
+.item4{
+    grid-area: item4; 
+    display: flex;
+    align-items: space-around;
+    gap: 1rem;
+}
+
+
