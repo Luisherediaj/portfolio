@@ -194,4 +194,39 @@ header{
     gap: 1rem;
 }
 
-
+/* mkt digital */
+.mkt-digital{
+    position: absolute;
+    z-index: 1;
+}
+.mkt-digital-image{
+    width: 100%;
+    opacity: 0.3;
+    max-height: 100%;
+}
+#main__marketing h1{
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.texto-marketing{
+    font-weight:700;
+    font-size: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: justify;
+    line-height: 1.8em;
+}
+.tareas-mkt{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1em;
+}
+.logo-mkt{
+    width: auto;
+    height: 6em;
+}
+.apartado-mkt{
+    text-align: center;
+}
