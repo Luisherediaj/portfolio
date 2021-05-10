@@ -230,3 +230,39 @@ header{
 .apartado-mkt{
     text-align: center;
 }
+.herramientas-mkt{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1em;
+}
+.her-mkt{
+    width: auto;
+    height: 6em;
+}
+.herra-mkt{
+    text-align: center;
+}
+.portfolio-mkt{
+    width: 12rem;
+    height: 10rem;
+    display:block;
+    margin:auto;
+}
+
+/* footer */
+footer{
+    background-color: rgb(241, 238, 238);
+    padding-bottom: 1em;
+    padding-top: 1em;
+    width: 100%;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+}
+#footer__contacto{
+    display: grid;
+    grid-template-areas: 
+    'footer1 footer2 footer3';
+    column-gap: 11rem;
+    row-gap: 1.5rem;
+}
