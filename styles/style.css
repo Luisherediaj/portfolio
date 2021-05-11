@@ -1,121 +1,118 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-}
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
 
 body{
     font-family: 'Lato', sans-serif;
+    background-color: rgb(253, 253, 253);
+    margin: 0;
     font-size: 16px;
+    color: rgb(70, 70, 70);
 }
-
-/* header */
 header{
-    background-color: rgb(241, 238, 238);
+    display: flex;
+    justify-content: space-between;
     position: fixed;
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1.5rem;
-    height: 3rem;
-    top:0;
-    z-index: 2;
-} 
-.header__enlaces{
-    display: inline;
-    cursor: pointer;
-    text-align: center;
-    color: black;
+    background-color: rgb(214, 214, 214);
+    z-index: 3;
+    padding: 0.8rem;
+    box-shadow: 2px 2px 10px #666;
 }
+
 .header__enlaces a{
-    padding-left: 5rem;
-    font-weight: bold;
-}
-.header__enlaces a:visited{
     color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.3rem;
 }
 .header__enlaces a:hover{
-    background-color: var(--primary-color);
-    color: rgb(241, 63, 63);
-
-}
-.header__iconos{
-    padding-top: 0.5rem;
+    color: rgb(53, 189, 71);
 }
 
-/* main */
+.header__iconos a{
+    padding-right: 1rem;
+}
+.iconolui{
+    margin-right: 1rem;
+}
+
+
 /* inicio */
-#main__inicio{
-    margin-top: 3rem;
+.bg{
+    text-align: center;
+    padding: 10px;
+    height: 100vh;
+    background-size: cover;
+    box-sizing: border-box;
+    opacity: 0.3;
 }
-.main__inicio-texto{
+.bg-text{
     position: absolute;
-    padding-top: 3em;
-    padding-left: 2em;
-    padding-bottom: 2em;
-    z-index: 1;
-}
-.main__inicio-texto h2{
-    padding-top: -2em;
-    padding-left: 2em;
-    padding-bottom: 1.8em;
-    font-size: 2.5rem;
-    text-align: center;
-}
-.main__inicio-texto h1{
-    padding-left: 1.7em;
-    font-size: 3rem;
-    text-align: center;
+    top: 25%;
+    padding-left: 5rem;
+    z-index: 2;
     font-style: italic;
 }
-.main__inicio-image{
-    width: 100%;
-    opacity: 0.5;
-    max-height: 70%;
+.bg-text h2{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.bg-text h1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.home{
+    background-image: url("../images/luis-tri.jpg");
 }
 
 /* sobre mi */
+
 .sobre-mi{
-    position: absolute;
-    z-index: 1;
-}
-.main__sobre-mi-image{
-    width: 100%;
-    opacity: 0.3;
-    max-height: 70%;
-}
-#main__sobre-mi h1{
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    font-size: 2.5rem;
     text-align: center;
+    padding-top: 4rem;
 }
-.sobre-mi-columns{
-    column-count:3;
+
+.sobre-mi-text{
     font-size: 1rem;
     text-align: justify;
-    font-weight:700;
+    font-weight:500;
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
     padding-bottom: 0.5rem;
     line-height: 1.8em;
-    column-gap: 2rem;
+}
+.sobre-mi-h1{
+    font-weight: bold;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+    text-align: center;
 }
 
 /* desarrollo */
-.desarrollo{
-    position: absolute;
-    z-index: 1;
+
+.desarrollo-h1{
+    font-weight: bold;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 4rem;
 }
-.fondo-desarrollo{
-    width: 100%;
-    opacity: 0.3;
-    max-height: 100%;
+.desarrollo-h2{
+    font-weight:800;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+.desarrollo-text{
+    font-size: 1rem;
+    text-align: justify;
+    font-weight:500;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    line-height: 1.8em;
 }
 .logo-lenguaje{
     height: 5em;
@@ -128,100 +125,45 @@ header{
 }
 .lenguajes{
     text-align: center;
+    box-shadow: 2px 2px 10px #666;
+    padding: 10px;
+    border-radius: 5px;
 }
-#main__desarrollo h1{
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    font-size: 2.5rem;
-    text-align: center;
+.btn{
+    background-color: rgb(53, 189, 71);
+    color: cornsilk;
 }
-.texto-desarrollo{
-    font-weight:700;
-    font-size: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    text-align: justify;
+.btn:hover{
+    background-color: cornsilk;
+    color: rgb(53, 189, 71);
+    border: 2px solid rgb(53, 189, 71);
 }
-.desarrollo h2{
-    font-size: 1.8em;
-    text-align: center;
-    padding-top: 1.5rem;
-    padding-bottom: 2rem;
-}
-.proyectos-desarrollo{
-    display: grid;
-    grid-template-areas: 
-    'item1 item2'
-    'item3 item4';
-    grid-template-columns: 40rem 40rem;
-    grid-template-rows: 10rem 10rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 1rem;
-    column-gap: 1.5rem;
-    row-gap: 1.5rem;
-    font-weight:500;
-    font-size: 1rem;
-    text-align: justify;
-    line-height: 1.8em;
-}
-.img-proyecto{
+.img-fluid{
+    max-height: 12rem; 
     width: auto;
-    height: 100%
-}
-.item1{
-    grid-area: item1; 
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-}
-.item2{
-    grid-area: item2; 
-    display: flex;
-    justify-content: space-around;
-    gap: 1rem;
-}
-.item3{
-    grid-area: item3; 
-    display: flex;
-    align-items: space-around;
-    gap: 1rem;
-}
-.item4{
-    grid-area: item4; 
-    display: flex;
-    align-items: space-around;
-    gap: 1rem;
+    display:block;
+    margin:auto;
 }
 
-/* mkt digital */
-.mkt-digital{
-    position: absolute;
-    z-index: 1;
-}
-.mkt-digital-image{
-    width: 100%;
-    opacity: 0.3;
-    max-height: 100%;
-}
-#main__marketing h1{
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    font-size: 2.5rem;
+/* marketing */
+.marketing-h1{
+    font-weight: bold;
+    padding-bottom: 1rem;
+    font-size: 3rem;
     text-align: center;
+    padding-top: 4rem;
 }
-.texto-marketing{
-    font-weight:700;
+.marketing-text{
     font-size: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
     text-align: justify;
+    font-weight:500;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
     line-height: 1.8em;
 }
-.tareas-mkt{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 1em;
+.tareas{
+    padding: 1rem;
+
 }
 .logo-mkt{
     width: auto;
@@ -229,10 +171,13 @@ header{
 }
 .apartado-mkt{
     text-align: center;
+    box-shadow: 2px 2px 10px #666;
+    padding: 10px;
+    border-radius: 5px;
 }
 .herramientas-mkt{
     display: flex;
-    justify-content: space-around;
+    align-content: center;
     padding-top: 1em;
 }
 .her-mkt{
@@ -241,48 +186,78 @@ header{
 }
 .herra-mkt{
     text-align: center;
+    box-shadow: 2px 2px 10px #666;
+    padding: 10px;
+    border-radius: 5px;
 }
 .portfolio-mkt{
     width: 12rem;
     height: 10rem;
     display:block;
     margin:auto;
+    box-shadow: 2px 2px 10px #666;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+.portfolio-mkt:hover{
+    width: 15rem;
+    height: 13rem;
+    display:block;
+    margin:auto;
+    box-shadow: 4px 4px 12px rgb(53, 189, 71);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
 }
 
 /* footer */
 footer{
-    background-color: rgb(241, 238, 238);
+    background-color: rgb(214, 214, 214);
     padding-bottom: 1em;
     padding-top: 1em;
     width: 100%;
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: space-around;
+    font-size: 1rem;
 }
-#footer__contacto{
-    display: grid;
-    grid-template-areas: 
-    'footer1 footer2 footer3';
-    column-gap: 11rem;
-    row-gap: 1.5rem;
+.icon-footer{
+    margin-right: 1rem;
 }
-.contacto{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-.contacto a:visited{
+.footer-contacto a{
     color: black;
+    text-decoration: none;
+}
+.footer-contacto a:hover{
+    color: black;
+    text-decoration: none;
+    color:rgb(53, 189, 71);
+}
+
+
+@media (max-width: 1200px){
+	body {
+		font-size: 16px;
+	}
 }
 
 @media (max-width: 922px){
-    body{
-		font-size: 16px;
-    }
+	
+	body{
+		font-size: 14px;
+	}
 }
 
-@media (max-width: 576px){
+
+@media (max-width: 768px){
     body{
 		font-size: 12px;
-    }
+	}
 }
+
+
+@media (max-width: 576px){
+	body{
+		font-size: 12px;
+	}
+}
+
+
